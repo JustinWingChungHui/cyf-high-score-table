@@ -1,0 +1,50 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.App {
+  border-color: blue;
+  border-width: 0.1em;
+  border-style: solid;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.App-header{
+  text-align: center;
+  color: lightskyblue;
+}
+
+.countryTable {
+  border-color: lime;
+  border-width: 1em;
+  border-style: solid;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.countryTable th{
+  text-align: center;
+  color: lightskyblue;
+}
+
+.countryTable td{
+  text-align: right;
+  width: 50%;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
