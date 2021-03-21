@@ -12,7 +12,7 @@ function App() {
   const [sort, setSort] = useState('descending');
   
   const sortClicked = () => {
-    if (sort == 'descending') {
+    if (sort === 'descending') {
       setSort('ascending');
     } else {
       setSort('descending');
