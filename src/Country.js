@@ -1,5 +1,4 @@
 import React from 'react';
-import allCountryScores from './scores';
 
 const Country = (props) => {
 
