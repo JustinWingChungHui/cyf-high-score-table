@@ -5,10 +5,12 @@ import allCountryScores from './scores';
 
 function App() {
 
+  // Sort the countries alphabetically
   const countries = allCountryScores.sort(
     (a, b) => a.name > b.name ? 1 : -1
   ).slice();
 
+  // Creates a pseudo country called World-Wide with all the scores as one array
   const worldwide = {
     name: 'World-Wide',
     scores: [].concat(...allCountryScores.map(c => c.scores))
@@ -18,6 +20,7 @@ function App() {
 
   const [sort, setSort] = useState('descending');
   
+  // Sets the sort order when the button is clicked
   const sortClicked = () => {
     if (sort === 'descending') {
       setSort('ascending');

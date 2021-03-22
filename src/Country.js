@@ -2,6 +2,7 @@ import React from 'react';
 
 const Country = (props) => {
 
+    // Sorts the scores depending on the sortOrder
     let scores;
 
     if (props.sortOrder === 'ascending') {
