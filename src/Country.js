@@ -28,7 +28,7 @@ const Country = (props) => {
                         <td>
                             {s.n}
                         </td>
-                        <td>
+                        <td className="score">
                             {s.s}
                         </td>
                     </tr>

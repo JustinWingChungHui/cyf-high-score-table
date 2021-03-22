@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Press Start 2P';
   font-weight: bold;
   font-size: 2em;
 }
@@ -11,6 +11,7 @@ body {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
   padding: 1em;
 }
 
@@ -26,25 +27,35 @@ body {
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 0.5em;
 }
 
-.countryTable th{
+.countryTable th {
   text-align: center;
   color: lightskyblue;
 }
 
-.countryTable td{
+.countryTable td {
   text-align: right;
   width: 50%;
+  padding-top: 0.5em;
 }
 
+
 button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
+  background-color: white; /* Green */
+  border-color: black;
+  border-style: solid;
+  border-width: 0.2em;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: large;
+  font-family: 'Press Start 2P';
+}
+
+.score {
+  color: darkred;
 }

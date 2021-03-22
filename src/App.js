@@ -9,6 +9,13 @@ function App() {
     (a, b) => a.name > b.name ? 1 : -1
   ).slice();
 
+  const worldwide = {
+    name: 'World-Wide',
+    scores: [].concat(...allCountryScores.map(c => c.scores))
+  };
+
+  console.log(worldwide);
+
   const [sort, setSort] = useState('descending');
   
   const sortClicked = () => {
@@ -25,9 +32,15 @@ function App() {
         High Scores Per Country
       </header>
       <button onClick={sortClicked}>Sort</button>
+
+      {/* Worldwide */}
+      <Country key={worldwide.name} country={worldwide} sortOrder={sort}/>
+
+      {/* all countries individually */}
       {countries.map((country) => 
         <Country key={country.name} country={country} sortOrder={sort}/>
       )}
+
     </div>
   );
 }
