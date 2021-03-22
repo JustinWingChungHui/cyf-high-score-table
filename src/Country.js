@@ -12,18 +12,16 @@ const Country = (props) => {
                     .sort((a, b) => a.s < b.s ? 1 : -1).slice();
     }
     
-
-
     return(
         <table className="countryTable">
-            <thead>
-                <th colSpan="2">
-                    HIGH SCORES: {props.country.name}
-                </th>
-            </thead>
             <tbody>
-                {scores.map(s => 
-                    <tr>
+                <tr>
+                    <th colSpan="2">
+                        HIGH SCORES: {props.country.name}
+                    </th>
+                </tr>
+                {scores.map((s, index) => 
+                    <tr key={index}>
                         <td>
                             {s.n}
                         </td>
